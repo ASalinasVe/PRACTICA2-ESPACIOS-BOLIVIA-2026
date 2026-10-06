@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         events: function (fetchInfo, successCallback, failureCallback) {
-            fetch('https://api.example.com/events') // Cambia esta URL por la de tu API
+            fetch('https://api.example.com/events') // esta api no esta siendo usada (creo)
                 .then(response => response.json())
                 .then(data => {
                     let events = data.map(event => {
